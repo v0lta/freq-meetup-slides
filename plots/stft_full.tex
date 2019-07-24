@@ -1,0 +1,29 @@
+\RequirePackage{luatex85}
+\documentclass{standalone}
+\usepackage[utf8]{inputenc}
+\usepackage{pgfplots}
+\usepgfplotslibrary{groupplots}
+\usepgfplotslibrary{dateplot}
+\pgfplotsset{compat=newest}
+%\DeclareUnicodeCharacter{2212}{−}
+\begin{document}
+% This file was created by matplotlib2tikz v0.7.3.
+\begin{tikzpicture}
+
+\begin{axis}[
+tick align=outside,
+tick pos=left,
+x grid style={white!69.01960784313725!black},
+xlabel={time},
+xmin=-0.5, xmax=225.5,
+xtick style={color=black},
+y grid style={white!69.01960784313725!black},
+ylabel={fft bin},
+ymin=-0.5, ymax=299.5,
+ytick style={color=black}
+]
+\addplot graphics [includegraphics cmd=\pgfimage,xmin=-0.5, xmax=225.5, ymin=299.5, ymax=-0.5] {tmp-000.png};
+\end{axis}
+
+\end{tikzpicture}
+\end{document}
