@@ -161,14 +161,21 @@
 \end{frame}
 
 \begin{frame}{The Fourier Transform}
+Forward:
 \begin{equation}
 % \bX_m(\omega, Sm) 
-   \mathcal{F}\left(\mathbf{x}[l]\right) = \sum_{l = -\infty}^{\infty} \mathbf{x}[l]e^{-j\omega l},
+   \mathbf{X}(\omega) = \mathcal{F}\left(\mathbf{x}\right) = \sum_{l = -\infty}^{\infty} \mathbf{x}[l]e^{-j\omega l},
     \label{eq:STFT}
 \end{equation}
 Euler's formula:
 \begin{equation}
 e^{j\omega} = \cos(\omega) + j\sin (\omega)
+\end{equation}
+Backward:
+\begin{equation}
+% \bX_m(\omega, Sm) 
+   \mathbf{x}(n) = \mathcal{F}^{-1}\left(\mathbf{x}\right) = \sum_{k = -\infty}^{\infty} \mathbf{X}[k]e^{j\omega k},
+    \label{eq:STFT}
 \end{equation}
 \end{frame}
 
@@ -273,6 +280,12 @@ Example 2:
     \includegraphics[width=0.49\linewidth]{./img/power_pred_15min_1d_test.pdf}
 \end{figure}
 \end{frame}
+
+\begin{frame}{The European Power Grid}
+\centering
+\includegraphics[width=.9\linewidth]{./img/Map_Continental-Europe-2.pdf}
+\end{frame}
+
 
 
 \begin{frame}{Learning trough the STFT \cite{wolter2018Fourier}}
