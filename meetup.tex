@@ -164,7 +164,7 @@
 Forward:
 \begin{equation}
 % \bX_m(\omega, Sm) 
-   \mathbf{X}(\omega) = \mathcal{F}\left(\mathbf{x}\right) = \sum_{l = -\infty}^{\infty} \mathbf{x}[l]e^{-j\omega l},
+   \mathbf{X}(\omega) = \mathcal{F}\left(\mathbf{x}\right) = \sum_{t = -\infty}^{\infty} \mathbf{x}[t]e^{-j\omega t},
     \label{eq:STFT}
 \end{equation}
 Euler's formula:
@@ -174,7 +174,7 @@ e^{j\omega} = \cos(\omega) + j\sin (\omega)
 Backward:
 \begin{equation}
 % \bX_m(\omega, Sm) 
-   \mathbf{x}(n) = \mathcal{F}^{-1}\left(\mathbf{x}\right) = \sum_{k = -\infty}^{\infty} \mathbf{X}[k]e^{j\omega k},
+   \mathbf{x}(t) = \mathcal{F}^{-1}\left(\mathbf{X}\right) = \sum_{\omega = -\infty}^{\infty} \mathbf{X}[\omega]e^{j \omega t},
     \label{eq:STFT}
 \end{equation}
 \end{frame}
